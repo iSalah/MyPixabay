@@ -33,6 +33,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
         setupUI()
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        self.collectionView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowImagesSegue" {
             let imagesViewController = segue.destination as? ImagesViewController
