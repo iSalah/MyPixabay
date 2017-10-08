@@ -56,6 +56,7 @@ class ImagesViewController: UIViewController, UIScrollViewDelegate {
         hFormat = "\(hFormat)\(isLast ? "|" : "")"
         self.scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: vFormat, options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["image":imageView]))
         self.scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: hFormat, options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["image":imageView, "prevImage": previousImageView, "scrollView": scrollView]))
+        self.scrollView.addConstraint(NSLayoutConstraint(item: imageView, attribute: .centerY, relatedBy: .equal, toItem: self.scrollView, attribute: .centerY, multiplier: 1, constant: 0))
     }
     
     private func configurePageControl() {
