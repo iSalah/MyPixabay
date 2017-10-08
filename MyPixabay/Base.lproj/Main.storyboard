@@ -32,13 +32,27 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pK7-ha-uo9">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="ImageCell" id="pK7-ha-uo9" customClass="ImageCell" customModule="MyPixabay" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="teb-BM-9kl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="teb-BM-9kl" firstAttribute="top" secondItem="pK7-ha-uo9" secondAttribute="top" id="1an-cs-4a0"/>
+                                            <constraint firstAttribute="trailing" secondItem="teb-BM-9kl" secondAttribute="trailing" id="PY3-zo-bhY"/>
+                                            <constraint firstItem="teb-BM-9kl" firstAttribute="leading" secondItem="pK7-ha-uo9" secondAttribute="leading" id="WRW-8d-U7a"/>
+                                            <constraint firstAttribute="bottom" secondItem="teb-BM-9kl" secondAttribute="bottom" id="qbz-HI-gbi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="teb-BM-9kl" id="3KT-Ds-8W6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

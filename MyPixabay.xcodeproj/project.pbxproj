@@ -18,6 +18,8 @@
 		4E8C24ED1F8A67C6003EE54B /* Image+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24EC1F8A67C6003EE54B /* Image+Service.swift */; };
 		4E8C24F11F8A6958003EE54B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24F01F8A6958003EE54B /* AppConfig.swift */; };
 		4E8C24F31F8A6E93003EE54B /* SearchViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24F21F8A6E93003EE54B /* SearchViewController+SearchBar.swift */; };
+		4E8C24F61F8A6FEC003EE54B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24F51F8A6FEC003EE54B /* ImageCell.swift */; };
+		4E8C24F91F8A7080003EE54B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24F81F8A7080003EE54B /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		4E8C24EC1F8A67C6003EE54B /* Image+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Service.swift"; sourceTree = "<group>"; };
 		4E8C24F01F8A6958003EE54B /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		4E8C24F21F8A6E93003EE54B /* SearchViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchBar.swift"; sourceTree = "<group>"; };
+		4E8C24F51F8A6FEC003EE54B /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		4E8C24F81F8A7080003EE54B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		9DAE0543E7AA9F8E8CA5F260 /* Pods-MyPixaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixaby/Pods-MyPixaby.debug.xcconfig"; sourceTree = "<group>"; };
 		CF54BDF0504094A2F5DE911B /* Pods-MyPixabay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixabay.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixabay/Pods-MyPixabay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,7 @@
 		4E0E75621F8A5B0D00A20F05 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4E8C24F71F8A7069003EE54B /* Extensions */,
 				4E8C24EA1F8A66F2003EE54B /* RequestsManager.swift */,
 			);
 			name = Helpers;
@@ -143,6 +148,7 @@
 		4E0E75661F8A5B1800A20F05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4E8C24F41F8A6FDA003EE54B /* Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -171,6 +177,22 @@
 				4E8C24F01F8A6958003EE54B /* AppConfig.swift */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		4E8C24F41F8A6FDA003EE54B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E8C24F51F8A6FEC003EE54B /* ImageCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4E8C24F71F8A7069003EE54B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E8C24F81F8A7080003EE54B /* UIImageView+Extension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		A9ABC19C5BAB14A15B8F667D /* Frameworks */ = {
@@ -312,8 +334,10 @@
 				4E0E75501F8A584000A20F05 /* SearchViewController.swift in Sources */,
 				4E8C24ED1F8A67C6003EE54B /* Image+Service.swift in Sources */,
 				4E8C24E91F8A6609003EE54B /* Image.swift in Sources */,
+				4E8C24F91F8A7080003EE54B /* UIImageView+Extension.swift in Sources */,
 				4E0E754E1F8A584000A20F05 /* AppDelegate.swift in Sources */,
 				4E8C24EB1F8A66F2003EE54B /* RequestsManager.swift in Sources */,
+				4E8C24F61F8A6FEC003EE54B /* ImageCell.swift in Sources */,
 				4E8C24F31F8A6E93003EE54B /* SearchViewController+SearchBar.swift in Sources */,
 				4E8C24F11F8A6958003EE54B /* AppConfig.swift in Sources */,
 			);
