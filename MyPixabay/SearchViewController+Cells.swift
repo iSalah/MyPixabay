@@ -30,4 +30,12 @@ extension SearchViewController {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let defaultImageWidth: Double = 100
+        let numberOfItemsInSingleRow = floor(Double(self.view.bounds.width) / defaultImageWidth)
+        let spaceLeft = Double(self.view.bounds.width) - (numberOfItemsInSingleRow * defaultImageWidth)
+        let imageWidth = defaultImageWidth + (spaceLeft / numberOfItemsInSingleRow)
+        return CGSize(width: imageWidth, height: imageWidth)
+    }
+    
 }
