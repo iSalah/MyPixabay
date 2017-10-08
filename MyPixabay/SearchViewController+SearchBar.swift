@@ -12,7 +12,9 @@ import UIKit
 extension SearchViewController {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        fetchImages()
+        clearSelection()
+        searchTimer?.invalidate()
+        self.searchTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.fetchImages), userInfo: nil, repeats: false)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

@@ -22,6 +22,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     }
     var page = 1
     var shouldLoadMoreImages = false
+    var searchTimer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +52,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     }
     
     func fetchImages() {
-        clearSelection()
         Image.fetch(withQuery: self.searchBar.text ?? "") { images in
             guard let images = images else { return }
             self.images = images
