@@ -87,10 +87,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MyPixabay" id="X4w-xh-vMM"/>
+                    <navigationItem key="navigationItem" title="MyPixabay" id="X4w-xh-vMM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="Cmp-TM-k4l"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="j9T-GW-jz2" id="3jU-P4-Kvo"/>
                         <outlet property="searchBar" destination="cJJ-OT-bEB" id="SLd-TX-qCK"/>
+                        <outlet property="submitButton" destination="Cmp-TM-k4l" id="ZsW-Nu-0nr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

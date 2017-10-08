@@ -12,9 +12,14 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var submitButton: UIBarButtonItem!
     
     var images = [Image]()
-    var selectedImages = [Image]()
+    var selectedImages = [Image]() {
+        didSet {
+            self.submitButton.isEnabled = selectedImages.count > 0
+        }
+    }
     var page = 1
     var shouldLoadMoreImages = false
 
@@ -25,6 +30,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
         self.collectionView.dataSource = self
         self.collectionView.allowsSelection = true
         self.collectionView.allowsMultipleSelection = true
+        setupUI()
+    }
+    
+    func setupUI() {
+        self.submitButton.isEnabled = false
     }
     
     func fetchImages() {
