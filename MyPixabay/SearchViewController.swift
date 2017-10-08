@@ -33,6 +33,13 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
         setupUI()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowImagesSegue" {
+            let imagesViewController = segue.destination as? ImagesViewController
+            imagesViewController?.images = selectedImages
+        }
+    }
+    
     func setupUI() {
         self.submitButton.isEnabled = false
     }
