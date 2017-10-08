@@ -49,9 +49,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     
     func setupUI() {
         self.submitButton.isEnabled = false
+        self.collectionView.backgroundColor = UIColor.darkGray
     }
     
     func fetchImages() {
+        self.collectionView.backgroundColor = UIColor.white
         Image.fetch(withQuery: self.searchBar.text ?? "") { images in
             guard let images = images else { return }
             self.images = images
