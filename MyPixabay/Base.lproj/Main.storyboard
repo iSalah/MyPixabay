@@ -88,7 +88,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="MyPixabay" id="X4w-xh-vMM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="Cmp-TM-k4l"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="Cmp-TM-k4l">
+                            <connections>
+                                <segue destination="7dz-AA-D8u" kind="show" identifier="ShowImagesSegue" id="pKo-6x-Xpj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="j9T-GW-jz2" id="3jU-P4-Kvo"/>
@@ -99,6 +103,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="113"/>
+        </scene>
+        <!--Images View Controller-->
+        <scene sceneID="uYs-1m-0Gd">
+            <objects>
+                <viewController id="7dz-AA-D8u" customClass="ImagesViewController" customModule="MyPixabay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJA-HP-Pa3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-dT-cA3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Eoq-gE-boR">
+                                <rect key="frame" x="168" y="615" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lle-Tk-NcC" firstAttribute="bottom" secondItem="kIJ-dT-cA3" secondAttribute="bottom" id="9el-oZ-YsG"/>
+                            <constraint firstItem="lle-Tk-NcC" firstAttribute="trailing" secondItem="kIJ-dT-cA3" secondAttribute="trailing" id="KBE-tp-Otc"/>
+                            <constraint firstItem="Eoq-gE-boR" firstAttribute="centerX" secondItem="YJA-HP-Pa3" secondAttribute="centerX" id="ZjN-y9-uqY"/>
+                            <constraint firstItem="kIJ-dT-cA3" firstAttribute="top" secondItem="lle-Tk-NcC" secondAttribute="top" id="aGL-fc-9iW"/>
+                            <constraint firstItem="lle-Tk-NcC" firstAttribute="bottom" secondItem="Eoq-gE-boR" secondAttribute="bottom" constant="15" id="kt6-EN-4Sc"/>
+                            <constraint firstItem="kIJ-dT-cA3" firstAttribute="leading" secondItem="lle-Tk-NcC" secondAttribute="leading" id="sLJ-iG-5rg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lle-Tk-NcC"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="Eoq-gE-boR" id="qet-fM-nNg"/>
+                        <outlet property="scrollView" destination="kIJ-dT-cA3" id="xMs-53-SRq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bE7-VV-fcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P9a-Cc-PRE">
