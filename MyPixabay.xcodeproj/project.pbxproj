@@ -14,6 +14,7 @@
 		4E0E75551F8A584000A20F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0E75541F8A584000A20F05 /* Assets.xcassets */; };
 		4E0E75581F8A584000A20F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0E75561F8A584000A20F05 /* LaunchScreen.storyboard */; };
 		4E8C24E91F8A6609003EE54B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24E81F8A6609003EE54B /* Image.swift */; };
+		4E8C24EB1F8A66F2003EE54B /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24EA1F8A66F2003EE54B /* RequestsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4E0E75591F8A584000A20F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E8C24E61F8A6372003EE54B /* Pods-MyPixabay */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Pods-MyPixabay"; path = "Pods/Target Support Files/Pods-MyPixabay"; sourceTree = "<group>"; };
 		4E8C24E81F8A6609003EE54B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		4E8C24EA1F8A66F2003EE54B /* RequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
 		9DAE0543E7AA9F8E8CA5F260 /* Pods-MyPixaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixaby/Pods-MyPixaby.debug.xcconfig"; sourceTree = "<group>"; };
 		CF54BDF0504094A2F5DE911B /* Pods-MyPixabay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixabay.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixabay/Pods-MyPixabay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 		4E0E75621F8A5B0D00A20F05 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4E8C24EA1F8A66F2003EE54B /* RequestsManager.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				4E0E75501F8A584000A20F05 /* SearchViewController.swift in Sources */,
 				4E8C24E91F8A6609003EE54B /* Image.swift in Sources */,
 				4E0E754E1F8A584000A20F05 /* AppDelegate.swift in Sources */,
+				4E8C24EB1F8A66F2003EE54B /* RequestsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
