@@ -15,4 +15,8 @@ extension SearchViewController {
         fetchImages()
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
 }
