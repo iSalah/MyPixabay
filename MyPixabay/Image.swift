@@ -10,9 +10,12 @@ import Foundation
 
 class Image {
     var url: String
+    var previewUrl: String
     
     init?(fromDictionary dict: [String:Any]) {
         guard let url = dict["webformatURL"] as? String else { return nil }
+        guard let previewUrl = dict["previewURL"] as? String else { return nil }
         self.url = url
+        self.previewUrl = previewUrl
     }
 }
