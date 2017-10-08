@@ -35,6 +35,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
+        self.clearSelection()
         self.collectionView.reloadData()
     }
     
@@ -64,9 +65,15 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     func paginateImages() {
         self.page += 1
         Image.fetch(withQuery: self.searchBar.text ?? "", page: self.page) { images in
+            let indexes = self.images.count..<(self.images.count + (images?.count ?? 0))
             self.images += images ?? []
             self.shouldLoadMoreImages = (images?.count ?? 0) > 0 ? true : false
-            self.collectionView.reloadData()
+            if (images?.count ?? 0) > 0 {
+                self.collectionView.insertItems(at: Array(indexes).map({IndexPath(row: $0, section: 0)}))
+            }
+            else {
+                self.collectionView.deleteItems(at: [IndexPath(row: self.images.count, section: 0)])
+            }
         }
     }
     

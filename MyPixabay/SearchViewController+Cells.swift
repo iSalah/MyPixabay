@@ -27,6 +27,9 @@ extension SearchViewController {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath) as! ImageCell
         cell.setupContent(fromImage: images[indexPath.row])
+        let isSelected = collectionView.indexPathsForSelectedItems?.contains(indexPath) ?? false
+        cell.layer.borderWidth = isSelected ? 4.0 : 0
+        cell.layer.borderColor = UIColor.blue.cgColor
         return cell
     }
     
