@@ -11,7 +11,8 @@ import Foundation
 class Image {
     var url: String
     
-    init?() {
-        return nil
+    init?(fromDictionary dict: [String:Any]) {
+        guard let url = dict["webformatURL"] as? String else { return nil }
+        self.url = url
     }
 }
