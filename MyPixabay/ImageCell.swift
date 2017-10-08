@@ -18,7 +18,7 @@ class ImageCell: UICollectionViewCell {
     
     func setupContent(fromImage image: Image) {
         imageView.image = nil
-        imageView.loadImageFrom(url: image.url)
+        imageView.loadImageFrom(url: image.previewUrl)
     }
     
 }
