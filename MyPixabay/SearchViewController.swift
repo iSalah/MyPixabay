@@ -45,9 +45,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     }
     
     func fetchImages() {
+        clearSelection()
         Image.fetch(withQuery: self.searchBar.text ?? "") { images in
             guard let images = images else { return }
             self.images = images
+            
             self.page = 1
             self.shouldLoadMoreImages = true
             self.collectionView.reloadData()
@@ -60,6 +62,17 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
             self.images += images ?? []
             self.shouldLoadMoreImages = (images?.count ?? 0) > 0 ? true : false
             self.collectionView.reloadData()
+        }
+    }
+    
+    func clearSelection() {
+        selectedImages = []
+        guard let indexPathsForSelectedItems = self.collectionView.indexPathsForSelectedItems else { return }
+        for indexPath in indexPathsForSelectedItems {
+            self.collectionView.deselectItem(at: indexPath, animated:false)
+            if let cell = self.collectionView.cellForItem(at: indexPath) {
+                cell.layer.borderWidth = 0
+            }
         }
     }
 }
