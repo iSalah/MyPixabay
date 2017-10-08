@@ -8,14 +8,18 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var images = [Image]()
+    var page = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.searchBar.delegate = self
     }
-
+    
 }
 
