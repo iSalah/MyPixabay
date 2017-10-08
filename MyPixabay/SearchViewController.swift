@@ -34,6 +34,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
         setupUI()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.searchBar.resignFirstResponder()
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         self.clearSelection()
