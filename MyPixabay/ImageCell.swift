@@ -17,7 +17,7 @@ class ImageCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     func setupContent(fromImage image: Image) {
-        imageView.image = nil
+        imageView.image = UIImage(named: "defaultImage")
         imageView.loadImageFrom(url: image.previewUrl)
     }
     
