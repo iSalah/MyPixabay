@@ -62,7 +62,6 @@ class ImagesViewController: UIViewController, UIScrollViewDelegate {
     private func configurePageControl() {
         self.pageControl.numberOfPages = images.count
         self.pageControl.currentPage = 0
-        self.pageControl.currentPageIndicatorTintColor = UIColor.blue
     }
     
     func changePage() {
