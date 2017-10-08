@@ -17,6 +17,7 @@
 		4E8C24EB1F8A66F2003EE54B /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24EA1F8A66F2003EE54B /* RequestsManager.swift */; };
 		4E8C24ED1F8A67C6003EE54B /* Image+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24EC1F8A67C6003EE54B /* Image+Service.swift */; };
 		4E8C24F11F8A6958003EE54B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24F01F8A6958003EE54B /* AppConfig.swift */; };
+		4E8C24F31F8A6E93003EE54B /* SearchViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C24F21F8A6E93003EE54B /* SearchViewController+SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4E8C24EA1F8A66F2003EE54B /* RequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
 		4E8C24EC1F8A67C6003EE54B /* Image+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Service.swift"; sourceTree = "<group>"; };
 		4E8C24F01F8A6958003EE54B /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		4E8C24F21F8A6E93003EE54B /* SearchViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchBar.swift"; sourceTree = "<group>"; };
 		9DAE0543E7AA9F8E8CA5F260 /* Pods-MyPixaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixaby/Pods-MyPixaby.debug.xcconfig"; sourceTree = "<group>"; };
 		CF54BDF0504094A2F5DE911B /* Pods-MyPixabay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixabay.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixabay/Pods-MyPixabay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				4E0E754F1F8A584000A20F05 /* SearchViewController.swift */,
+				4E8C24F21F8A6E93003EE54B /* SearchViewController+SearchBar.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				4E8C24E91F8A6609003EE54B /* Image.swift in Sources */,
 				4E0E754E1F8A584000A20F05 /* AppDelegate.swift in Sources */,
 				4E8C24EB1F8A66F2003EE54B /* RequestsManager.swift in Sources */,
+				4E8C24F31F8A6E93003EE54B /* SearchViewController+SearchBar.swift in Sources */,
 				4E8C24F11F8A6958003EE54B /* AppConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
