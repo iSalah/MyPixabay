@@ -17,7 +17,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     var images = [Image]()
     var selectedImages = [Image]() {
         didSet {
-            self.submitButton.isEnabled = selectedImages.count > 0
+            self.submitButton.isEnabled = selectedImages.count >= 2
         }
     }
     var page = 1
