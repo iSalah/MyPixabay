@@ -12,12 +12,7 @@ import UIKit
 extension SearchViewController {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.page = 1
-        Image.fetch(withQuery: searchText) { images in
-            guard let images = images else { return }
-            self.images = images
-            self.collectionView.reloadData()
-        }
+        fetchImages()
     }
     
 }
