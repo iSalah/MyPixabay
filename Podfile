@@ -1,3 +1,3 @@
-target 'MyPixaby' do
+target 'MyPixabay' do
   use_frameworks!
 end

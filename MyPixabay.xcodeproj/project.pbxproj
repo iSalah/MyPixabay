@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CCE9E4DAB89F4E52DFC18F0 /* Pods_MyPixaby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E7163F14ACA3D28317ABB0 /* Pods_MyPixaby.framework */; };
+		07B00A9CF4BCE341AE68DF7B /* Pods_MyPixabay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF0D8929968A880FB50A9FE /* Pods_MyPixabay.framework */; };
 		4E0E754E1F8A584000A20F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E754D1F8A584000A20F05 /* AppDelegate.swift */; };
 		4E0E75501F8A584000A20F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E754F1F8A584000A20F05 /* ViewController.swift */; };
 		4E0E75531F8A584000A20F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0E75511F8A584000A20F05 /* Main.storyboard */; };
@@ -16,16 +16,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EF0D8929968A880FB50A9FE /* Pods_MyPixabay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPixabay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A1E5A9B292B5D32BAC15D0 /* Pods-MyPixabay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixabay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixabay/Pods-MyPixabay.debug.xcconfig"; sourceTree = "<group>"; };
 		31E7163F14ACA3D28317ABB0 /* Pods_MyPixaby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPixaby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B49BFAF81E0CCEE76A7E281 /* Pods-MyPixaby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixaby.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixaby/Pods-MyPixaby.release.xcconfig"; sourceTree = "<group>"; };
-		4E0E754A1F8A584000A20F05 /* MyPixaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPixaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0E754A1F8A584000A20F05 /* MyPixabay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPixabay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0E754D1F8A584000A20F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E0E754F1F8A584000A20F05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E0E75521F8A584000A20F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E0E75541F8A584000A20F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0E75571F8A584000A20F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E0E75591F8A584000A20F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E8C24E61F8A6372003EE54B /* Pods-MyPixabay */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Pods-MyPixabay"; path = "Pods/Target Support Files/Pods-MyPixabay"; sourceTree = "<group>"; };
 		9DAE0543E7AA9F8E8CA5F260 /* Pods-MyPixaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixaby/Pods-MyPixaby.debug.xcconfig"; sourceTree = "<group>"; };
+		CF54BDF0504094A2F5DE911B /* Pods-MyPixabay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPixabay.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPixabay/Pods-MyPixabay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CCE9E4DAB89F4E52DFC18F0 /* Pods_MyPixaby.framework in Frameworks */,
+				07B00A9CF4BCE341AE68DF7B /* Pods_MyPixabay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +49,8 @@
 			children = (
 				9DAE0543E7AA9F8E8CA5F260 /* Pods-MyPixaby.debug.xcconfig */,
 				4B49BFAF81E0CCEE76A7E281 /* Pods-MyPixaby.release.xcconfig */,
+				27A1E5A9B292B5D32BAC15D0 /* Pods-MyPixabay.debug.xcconfig */,
+				CF54BDF0504094A2F5DE911B /* Pods-MyPixabay.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -52,7 +58,7 @@
 		4E0E75411F8A584000A20F05 = {
 			isa = PBXGroup;
 			children = (
-				4E0E754C1F8A584000A20F05 /* MyPixaby */,
+				4E0E754C1F8A584000A20F05 /* MyPixabay */,
 				4E0E754B1F8A584000A20F05 /* Products */,
 				3C64E231412C1DAB5903C798 /* Pods */,
 				A9ABC19C5BAB14A15B8F667D /* Frameworks */,
@@ -62,12 +68,12 @@
 		4E0E754B1F8A584000A20F05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E0E754A1F8A584000A20F05 /* MyPixaby.app */,
+				4E0E754A1F8A584000A20F05 /* MyPixabay.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E0E754C1F8A584000A20F05 /* MyPixaby */ = {
+		4E0E754C1F8A584000A20F05 /* MyPixabay */ = {
 			isa = PBXGroup;
 			children = (
 				4E0E75691F8A5B2200A20F05 /* Config */,
@@ -80,7 +86,7 @@
 				4E0E75621F8A5B0D00A20F05 /* Helpers */,
 				4E0E75611F8A5B0A00A20F05 /* Assets */,
 			);
-			path = MyPixaby;
+			path = MyPixabay;
 			sourceTree = "<group>";
 		};
 		4E0E75611F8A5B0A00A20F05 /* Assets */ = {
@@ -155,7 +161,9 @@
 		A9ABC19C5BAB14A15B8F667D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E8C24E61F8A6372003EE54B /* Pods-MyPixabay */,
 				31E7163F14ACA3D28317ABB0 /* Pods_MyPixaby.framework */,
+				1EF0D8929968A880FB50A9FE /* Pods_MyPixabay.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E0E75491F8A584000A20F05 /* MyPixaby */ = {
+		4E0E75491F8A584000A20F05 /* MyPixabay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E0E755C1F8A584000A20F05 /* Build configuration list for PBXNativeTarget "MyPixaby" */;
+			buildConfigurationList = 4E0E755C1F8A584000A20F05 /* Build configuration list for PBXNativeTarget "MyPixabay" */;
 			buildPhases = (
 				B88A848478945060093CD3A7 /* [CP] Check Pods Manifest.lock */,
 				4E0E75461F8A584000A20F05 /* Sources */,
@@ -178,9 +186,9 @@
 			);
 			dependencies = (
 			);
-			name = MyPixaby;
+			name = MyPixabay;
 			productName = MyPixaby;
-			productReference = 4E0E754A1F8A584000A20F05 /* MyPixaby.app */;
+			productReference = 4E0E754A1F8A584000A20F05 /* MyPixabay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4E0E75451F8A584000A20F05 /* Build configuration list for PBXProject "MyPixaby" */;
+			buildConfigurationList = 4E0E75451F8A584000A20F05 /* Build configuration list for PBXProject "MyPixabay" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,7 +220,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E0E75491F8A584000A20F05 /* MyPixaby */,
+				4E0E75491F8A584000A20F05 /* MyPixabay */,
 			);
 		};
 /* End PBXProject section */
@@ -243,7 +251,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPixaby/Pods-MyPixaby-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPixabay/Pods-MyPixabay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B88A848478945060093CD3A7 /* [CP] Check Pods Manifest.lock */ = {
@@ -257,7 +265,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyPixaby-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MyPixabay-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -276,7 +284,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPixaby/Pods-MyPixaby-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPixabay/Pods-MyPixabay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,14 +430,14 @@
 		};
 		4E0E755D1F8A584000A20F05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DAE0543E7AA9F8E8CA5F260 /* Pods-MyPixaby.debug.xcconfig */;
+			baseConfigurationReference = 27A1E5A9B292B5D32BAC15D0 /* Pods-MyPixabay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyPixaby/Info.plist;
+				INFOPLIST_FILE = MyPixabay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.devsk.MyPixaby;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.devsk.MyPixabay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,14 +446,14 @@
 		};
 		4E0E755E1F8A584000A20F05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B49BFAF81E0CCEE76A7E281 /* Pods-MyPixaby.release.xcconfig */;
+			baseConfigurationReference = CF54BDF0504094A2F5DE911B /* Pods-MyPixabay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyPixaby/Info.plist;
+				INFOPLIST_FILE = MyPixabay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.devsk.MyPixaby;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.devsk.MyPixabay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,7 +463,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E0E75451F8A584000A20F05 /* Build configuration list for PBXProject "MyPixaby" */ = {
+		4E0E75451F8A584000A20F05 /* Build configuration list for PBXProject "MyPixabay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E0E755A1F8A584000A20F05 /* Debug */,
@@ -464,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E0E755C1F8A584000A20F05 /* Build configuration list for PBXNativeTarget "MyPixaby" */ = {
+		4E0E755C1F8A584000A20F05 /* Build configuration list for PBXNativeTarget "MyPixabay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E0E755D1F8A584000A20F05 /* Debug */,
