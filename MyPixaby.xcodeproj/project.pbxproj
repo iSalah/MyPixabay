@@ -70,14 +70,86 @@
 		4E0E754C1F8A584000A20F05 /* MyPixaby */ = {
 			isa = PBXGroup;
 			children = (
-				4E0E754D1F8A584000A20F05 /* AppDelegate.swift */,
-				4E0E754F1F8A584000A20F05 /* ViewController.swift */,
-				4E0E75511F8A584000A20F05 /* Main.storyboard */,
-				4E0E75541F8A584000A20F05 /* Assets.xcassets */,
-				4E0E75561F8A584000A20F05 /* LaunchScreen.storyboard */,
-				4E0E75591F8A584000A20F05 /* Info.plist */,
+				4E0E75691F8A5B2200A20F05 /* Config */,
+				4E0E75681F8A5B1D00A20F05 /* Application */,
+				4E0E75671F8A5B1A00A20F05 /* Controllers */,
+				4E0E75661F8A5B1800A20F05 /* Views */,
+				4E0E75651F8A5B1500A20F05 /* Models */,
+				4E0E75641F8A5B1300A20F05 /* Services */,
+				4E0E75631F8A5B1000A20F05 /* UI */,
+				4E0E75621F8A5B0D00A20F05 /* Helpers */,
+				4E0E75611F8A5B0A00A20F05 /* Assets */,
 			);
 			path = MyPixaby;
+			sourceTree = "<group>";
+		};
+		4E0E75611F8A5B0A00A20F05 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4E0E75541F8A584000A20F05 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		4E0E75621F8A5B0D00A20F05 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		4E0E75631F8A5B1000A20F05 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4E0E75511F8A584000A20F05 /* Main.storyboard */,
+				4E0E75561F8A584000A20F05 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4E0E75641F8A5B1300A20F05 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		4E0E75651F8A5B1500A20F05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4E0E75661F8A5B1800A20F05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4E0E75671F8A5B1A00A20F05 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E0E754F1F8A584000A20F05 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4E0E75681F8A5B1D00A20F05 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4E0E754D1F8A584000A20F05 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		4E0E75691F8A5B2200A20F05 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4E0E75591F8A584000A20F05 /* Info.plist */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 		A9ABC19C5BAB14A15B8F667D /* Frameworks */ = {
