@@ -38,4 +38,26 @@ extension SearchViewController {
         return CGSize(width: imageWidth, height: imageWidth)
     }
     
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        guard indexPath.row < self.images.count else { return false }
+        guard self.selectedImages.count < 2 else { return false }
+        return true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedImages.append(self.images[indexPath.row])
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderWidth = 4.0
+        cell?.layer.borderColor = UIColor.blue.cgColor
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let image = self.images[indexPath.row]
+        if let index = self.selectedImages.index(where: {$0.id == image.id}) {
+            self.selectedImages.remove(at: index)
+        }
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderWidth = 0.0
+    }
+    
 }

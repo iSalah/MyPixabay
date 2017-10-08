@@ -14,6 +14,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
     @IBOutlet weak var collectionView: UICollectionView!
     
     var images = [Image]()
+    var selectedImages = [Image]()
     var page = 1
     var shouldLoadMoreImages = false
 
@@ -22,6 +23,8 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UICollectionV
         self.searchBar.delegate = self
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        self.collectionView.allowsSelection = true
+        self.collectionView.allowsMultipleSelection = true
     }
     
     func fetchImages() {
