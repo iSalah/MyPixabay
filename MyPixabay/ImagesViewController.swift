@@ -24,6 +24,13 @@ class ImagesViewController: UIViewController, UIScrollViewDelegate {
         self.setScrollViewContent()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showImageDetails" {
+            let imageDetailsViewController = segue.destination as? ImageDetailsViewController
+            imageDetailsViewController?.image = self.images[self.pageControl.currentPage]
+        }
+    }
+    
     func setScrollViewContent() {
         self.scrollView.backgroundColor = UIColor.black
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false
