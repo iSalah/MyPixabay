@@ -114,20 +114,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-dT-cA3">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMr-dT-xZx">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="602"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="VMr-dT-xZx" firstAttribute="centerY" secondItem="kIJ-dT-cA3" secondAttribute="centerY" id="Hcr-Sk-3IU"/>
-                                    <constraint firstItem="VMr-dT-xZx" firstAttribute="top" secondItem="kIJ-dT-cA3" secondAttribute="top" id="KmG-2W-jMy"/>
-                                    <constraint firstItem="VMr-dT-xZx" firstAttribute="leading" secondItem="kIJ-dT-cA3" secondAttribute="leading" id="XX6-Fz-aij"/>
-                                    <constraint firstAttribute="bottom" secondItem="VMr-dT-xZx" secondAttribute="bottom" id="XjF-gs-1u6"/>
-                                    <constraint firstItem="VMr-dT-xZx" firstAttribute="centerX" secondItem="kIJ-dT-cA3" secondAttribute="centerX" id="iTO-y0-Aue"/>
-                                    <constraint firstAttribute="trailing" secondItem="VMr-dT-xZx" secondAttribute="trailing" id="zIG-kG-o48"/>
-                                </constraints>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Eoq-gE-boR">
                                 <rect key="frame" x="168" y="615" width="39" height="37"/>
@@ -145,7 +131,6 @@
                         <viewLayoutGuide key="safeArea" id="lle-Tk-NcC"/>
                     </view>
                     <connections>
-                        <outlet property="contentView" destination="VMr-dT-xZx" id="77z-EE-8VU"/>
                         <outlet property="pageControl" destination="Eoq-gE-boR" id="qet-fM-nNg"/>
                         <outlet property="scrollView" destination="kIJ-dT-cA3" id="xMs-53-SRq"/>
                     </connections>
