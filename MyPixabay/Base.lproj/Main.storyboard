@@ -119,10 +119,15 @@
                                 <rect key="frame" x="168" y="615" width="39" height="37"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.47396980263917765" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTx-Ws-L1l">
+                                <rect key="frame" x="338" y="622.5" width="22" height="22"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="lle-Tk-NcC" firstAttribute="trailing" secondItem="NTx-Ws-L1l" secondAttribute="trailing" constant="15" id="4yd-wL-m4w"/>
                             <constraint firstItem="lle-Tk-NcC" firstAttribute="bottom" secondItem="kIJ-dT-cA3" secondAttribute="bottom" id="9el-oZ-YsG"/>
+                            <constraint firstItem="NTx-Ws-L1l" firstAttribute="centerY" secondItem="Eoq-gE-boR" secondAttribute="centerY" id="Fgf-it-jXA"/>
                             <constraint firstItem="lle-Tk-NcC" firstAttribute="trailing" secondItem="kIJ-dT-cA3" secondAttribute="trailing" id="KBE-tp-Otc"/>
                             <constraint firstItem="Eoq-gE-boR" firstAttribute="centerX" secondItem="YJA-HP-Pa3" secondAttribute="centerX" id="ZjN-y9-uqY"/>
                             <constraint firstItem="kIJ-dT-cA3" firstAttribute="top" secondItem="lle-Tk-NcC" secondAttribute="top" id="aGL-fc-9iW"/>

@@ -73,4 +73,5 @@ class ImagesViewController: UIViewController, UIScrollViewDelegate {
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         self.pageControl.currentPage = Int(pageNumber)
     }
+
 }
