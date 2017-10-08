@@ -1,0 +1,33 @@
+//
+//  SearchViewController+Cells.swift
+//  MyPixabay
+//
+//  Created by Salah Kaci on 08/10/2017.
+//  Copyright © 2017 Salah Kaci. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+extension SearchViewController {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count + (shouldLoadMoreImages ? 1 : 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard indexPath.row < images.count else {
+            self.paginateImages()
+            return collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.loadingIdentifier, for: indexPath)
+        }
+
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath) as! ImageCell
+        cell.setupContent(fromImage: images[indexPath.row])
+        return cell
+    }
+    
+}

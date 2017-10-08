@@ -12,6 +12,7 @@ import UIKit
 class ImageCell: UICollectionViewCell {
     
     static let identifier = "ImageCell"
+    static let loadingIdentifier = "LoadingCell"
     
     @IBOutlet weak var imageView: UIImageView!
     
